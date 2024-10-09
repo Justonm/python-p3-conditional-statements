@@ -4,7 +4,7 @@ def admin_login(username, password):
     if (username == "admin" or username == "ADMIN") and password=="12345":
      return "Access granted"
     else:
-     return "Access Denied"
+     return "Access denied"
 print(admin_login("ADMIN", "12345"))    
 pass
 
@@ -23,15 +23,15 @@ print(hows_the_weather(89))
 pass
 
 def fizzbuzz(num):
-    # your code here
     if num % 3 == 0 and num % 5 == 0:
-       return "FizzBuzz"
-    elif num % 3:
-       return "Fizz"
-    elif num % 5:
-       return " Buzz"
+        return "FizzBuzz"
+    elif num % 3 == 0:
+        return "Fizz"
+    elif num % 5 == 0:
+        return "Buzz"
     else:
-       return num
+        return num
+
 print (fizzbuzz(9))
 pass
 
@@ -46,7 +46,7 @@ def calculator(operation, num1, num2):
     elif operation =="/":
        return num1 / num2
     else:
-       return "Invalid operation!"
-       return "None"
+       print ("Invalid operation!")
+       return None
 print(calculator("*", 2, 5))
 pass
